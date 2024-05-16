@@ -16,8 +16,11 @@ function MyWork() {
           ))}
         </div>
         <div className="mywork-showmore">
-          <p>Show More</p>
-          <img
+          <a href="https://github.com/Aadibkai" style={{textDecoration:"none"}}>
+            <p style={{fontSize:"30px",color:"white",fontWeight:"600"}}>Show More</p>
+            </a>
+
+          {/* <img
             style={{
               color: "white",
               backgroundColor: "white",
@@ -26,7 +29,7 @@ function MyWork() {
             }}
             src="./img/arrow.png"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>
