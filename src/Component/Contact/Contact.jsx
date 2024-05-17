@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [result,setResult]=useState("");
 
   const handleChange = (event, field) => {
     const value = event.target.value;
@@ -37,7 +36,6 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
     const formData = new FormData(event.target);
     formData.append("access_key", "abf6f513-c6e6-4a94-8375-3c087c25ee4c");
 
@@ -50,15 +48,12 @@ const Contact = () => {
       const data = await response.json();
 
       if (data.success) {
-        setResult("Form Submitted Successfully");
         event.target.reset();
       } else {
         console.log("Error", data);
-        setResult(data.message);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      setResult("Error submitting form. Please try again later.");
     }
   };
 

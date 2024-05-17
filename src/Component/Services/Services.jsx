@@ -2,7 +2,6 @@ import React from "react";
 import "./Services.css";
 import "../Service_data";
 import Service_Data from "../Service_data";
-import Design from "../Desing/Design";
 const Services = () => {
   return (
     <div id="services">

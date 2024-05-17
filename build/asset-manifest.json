@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b4e2d48e.css",
+    "main.js": "/static/js/main.6a1e2bc3.js",
+    "static/media/Resturant.png": "/static/media/Resturant.6e5b536f0eaa20a5b722.png",
+    "static/media/Movie.png": "/static/media/Movie.703a5aef0ba46b0f77d5.png",
+    "static/media/Travling.png": "/static/media/Travling.a38ad01a05c1993f229d.png",
+    "static/media/Crypto.png": "/static/media/Crypto.68a0fcd16fad5d8607ee.png",
+    "static/media/Hijab_store.png": "/static/media/Hijab_store.62f8df24ef5a6fc11924.png",
+    "static/media/Expences_Tracker.png": "/static/media/Expences_Tracker.55732101a63a75d94f2d.png",
+    "index.html": "/index.html",
+    "main.b4e2d48e.css.map": "/static/css/main.b4e2d48e.css.map",
+    "main.6a1e2bc3.js.map": "/static/js/main.6a1e2bc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4e2d48e.css",
+    "static/js/main.6a1e2bc3.js"
+  ]
+}
