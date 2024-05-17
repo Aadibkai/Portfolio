@@ -86,9 +86,10 @@ const Contact = () => {
                 <div className="contact-detail">
                   <img
                     style={{
-                      backgroundColor: "white",
+                      backgroundColor: "#a0a0a0",
                       height: "20px",
                       width: "20px",
+                      // color:"#a0a0a0"
                     }}
                     src="./img/phone-call.png"
                     alt="Phone"
@@ -98,7 +99,7 @@ const Contact = () => {
                 <div className="contact-detail">
                   <img
                     style={{
-                      backgroundColor: "white",
+                      backgroundColor: "#a0a0a0",
                       height: "20px",
                       width: "20px",
                     }}
@@ -110,7 +111,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form onSubmit={onSubmit} className="contact-right">
+          <form  className="contact-right">
             <label htmlFor="name">Your Name</label>
             <input
               type="text"
@@ -136,7 +137,7 @@ const Contact = () => {
               placeholder="Enter your message"
               required
             ></textarea>
-            <button type="button" onClick={handleSubscribed} className="contact-submit">
+            <button type="button" onSubmit={onSubmit} onClick={handleSubscribed} className="contact-submit">
               Submit Now
             </button>
             <ToastContainer />

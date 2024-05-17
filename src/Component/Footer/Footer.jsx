@@ -84,7 +84,7 @@ const Footer = () => {
               onClick={handleSubscribed}
               className="footer-subscribe"
             >
-              Subscribe        
+              Subscribe
             </button>
 
             <ToastContainer />
