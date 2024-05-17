@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 100px;
+    /* margin: 80px 100px; */
 }
 .mywork-title{
     position: relative;
@@ -23,7 +23,6 @@
 .mywork-contanir{
     display: grid;
     gap: 40px;
-    /* grid-template-columns: 1rf 1rf 1rf; */
     grid-template-columns: 1fr 1fr 1fr;
 }
 .mywork-contanir img{

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 80px;
   margin: 80px 170px;
 }
@@ -10,7 +9,6 @@
   position: relative;
 }
 .about-title h1 {
-  padding: 0px 30px;
   font-size: 80px;
   font-weight: 600;
 }
@@ -66,7 +64,6 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    /* margin-bottom: 80px; */
     margin-bottom: 20px;
 }
 .about-achievement{

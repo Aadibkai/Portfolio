@@ -4,15 +4,22 @@
   flex-direction: column;
   gap: 35px;
 }
+.container{
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.hero img {
+.hero img{
   margin-top: 150px;
 }
 
 .hero h1 {
   text-align: center;
   width: 70%;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 600;
 }
 

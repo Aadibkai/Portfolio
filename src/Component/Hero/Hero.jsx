@@ -3,9 +3,11 @@ import "./Hero.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 const Hero = () => {
   return (
+    <>
+    <div className="container">
     <div id="home">
       <div className="hero">
-        <img src="./img/per.png" alt="" />
+        <img  style={{height:"250px", borderRadius:"210px"}}src="./img/me.png" alt="" />
         <h1>
           <span>I'm Adib Kazi ,</span> frontend devloper based in pune
         </h1>
@@ -26,6 +28,8 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 

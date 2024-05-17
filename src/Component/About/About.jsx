@@ -3,6 +3,8 @@ import "./About.css";
 
 const About = () => {
   return (
+    <>
+    <div className="container">
     <div id="about">
       <div className="about">
         <div className="about-title">
@@ -11,7 +13,7 @@ const About = () => {
         </div>
         <div className="about-section">
           <div className="about-left">
-            <img src="./img/per.png" alt="Profile" />
+            <img style={{height:"250px", borderRadius:"210px"}} src="./img/me.png" alt="Profile" />
           </div>
           <div className="about-right">
             <div className="about-para">
@@ -59,6 +61,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 
