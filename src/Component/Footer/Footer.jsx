@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const [result, setResult] = React.useState("");
+
+  const handleSubscribed = (e) => {
+    e.preventDefault();
+    if (email.trim() !== "" && !error) {
+      setIsSubscribed(true);
+      toast.success("Subscribe successfully");
+    } else {
+      console.log("Valid email is required to subscribe");
+      toast.error("please enter a valid email");
+    }
+  };
+  const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [error, setError] = useState("");
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setEmail(value);
+
+    if (value.includes(".com" && "@")) {
+      setError("");
+    } else {
+      setError("! please enter a valid email");
+    }
+  };
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -44,20 +70,29 @@ const Footer = () => {
             className="footer-email-form"
             style={{ display: "flex", gap: "8px" }}
           >
-            <div className="footer-email-input">
-              <img style={{ height: "26px" }} src="./img/person.png" alt="" />
-              <input type="email" name="email" placeholder="Enter Your Email" />
-            </div>
-            <button type="submit" className="footer-subscribe">
-              Subscribe
+            <input
+              style={{ width: "276px", height: "38px", color: "white" }}
+              className="footer-email-input"
+              type="text"
+              placeholder="Enter your email address here..."
+              value={email}
+              onChange={handleChange}
+              required
+            />
+            <button
+              style={{ height: "54px" }}
+              onClick={handleSubscribed}
+              className="footer-subscribe"
+            >
+              Subscribe 
             </button>
+
+            <ToastContainer />
           </form>
-          {result && <p className="form-result">{result}</p>}
         </div>
       </div>
       <hr />
       <div className="footer-botom">
-        {/* <p className="footer-bottom-left">@2025 Adib Kazi. All rights reserved.</p> */}
         <div
           style={{
             display: "flex",

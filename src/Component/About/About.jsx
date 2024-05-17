@@ -1,21 +1,10 @@
 import React from "react";
 import "./About.css";
-import Design from "../Desing/Design";
 
 const About = () => {
   return (
-    <div id="about"
-      // style={{
-      //   position: "relative",
-      // }}
-    >
-      {/* <Design/> */}
-      <div
-        // style={{
-        //   position: "absolute",
-        // }}
-        className="about"
-      >
+    <div id="about">
+      <div className="about">
         <div className="about-title">
           <h1>About Me</h1>
           <img src="" alt="" />

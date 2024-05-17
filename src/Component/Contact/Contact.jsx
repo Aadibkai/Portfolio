@@ -1,10 +1,15 @@
 import React from "react";
 import "./Contact.css";
 import "../Desing/Design";
-import Design from "../Desing/Design";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
+  const notify = () => toast("Submite Sucesfully");
+ 
+
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -99,10 +104,10 @@ const Contact = () => {
               placeholder="Enter your message"
               required
             ></textarea>
-            <button type="submit" className="contact-submit">
+            <button   onClick={notify} type="submit" className="contact-submit">
               Submit Now
             </button>
-            {result && <p className="form-result">{result}</p>}
+            <ToastContainer />
           </form>
         </div>
       </div>

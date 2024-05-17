@@ -26,7 +26,7 @@ const App = () => {
         position: "relative",
       }}
     >
-      <Design/>
+      <Design />
       <div
         style={{
           position: "absolute",

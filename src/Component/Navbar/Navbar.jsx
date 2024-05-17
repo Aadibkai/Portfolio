@@ -13,12 +13,7 @@ const Navbar = () => {
         <li><AnchorLink style={{color:"white",fontSize:"28px",textDecoration:"none"}} href="#contact">Contact</AnchorLink></li>
       </ul>
       <div className="nav-connect">
-        <AnchorLink
-          style={{ color: "white", fontSize: "30px", textDecoration: "none" }}
-          href="#contact"
-        >
-          Connect With Me
-        </AnchorLink>
+        <AnchorLink style={{ color:"white",fontSize:"30px",textDecoration:"none"}} href="#contact">Connect With Me</AnchorLink>
       </div>
     </div>
   );
