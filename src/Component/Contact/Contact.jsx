@@ -1,36 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
-import "../Desing/Design";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const [result, setResult] = React.useState("");
-  const notify = () => toast("Submite Sucesfully");
- 
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [result,setResult]=useState("");
 
+  const handleChange = (event, field) => {
+    const value = event.target.value;
+    if (field === "name") {
+      setName(value);
+    } else if (field === "email") {
+      setEmail(value);
+    }
+  };
+
+  const handleSubscribed = (e) => {
+    e.preventDefault();
+    const validEmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const validNameRegex = /^[a-zA-Zà-ÿÀ-ÿ'’-]+([ a-zA-Zà-ÿÀ-ÿ'’-]+)*$/;
+
+    if (!validEmailRegex.test(email)) {
+      toast.error("Please enter a valid email");
+      return;
+    }
+
+    if (!validNameRegex.test(name)) {
+      toast.error("Please enter a valid name");
+      return;
+    }
+
+    toast.success("Submit successfully");
+  };
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-
     formData.append("access_key", "abf6f513-c6e6-4a94-8375-3c087c25ee4c");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setResult("Error submitting form. Please try again later.");
     }
   };
 
@@ -89,12 +117,16 @@ const Contact = () => {
               placeholder="Enter your name"
               name="name"
               required
+              value={name}
+              onChange={(e) => handleChange(e, "name")}
             />
             <label htmlFor="email">Your Email</label>
             <input
               type="email"
               placeholder="Enter Your Email"
+              onChange={(e) => handleChange(e, "email")}
               name="email"
+              value={email}
               required
             />
             <label htmlFor="message">Write your message here</label>
@@ -104,7 +136,7 @@ const Contact = () => {
               placeholder="Enter your message"
               required
             ></textarea>
-            <button   onClick={notify} type="submit" className="contact-submit">
+            <button type="button" onClick={handleSubscribed} className="contact-submit">
               Submit Now
             </button>
             <ToastContainer />
