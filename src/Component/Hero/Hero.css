@@ -4,7 +4,8 @@
   flex-direction: column;
   gap: 35px;
 }
-.container{
+
+.container {
   width: 100%;
   padding: 8px;
   display: flex;
@@ -12,7 +13,7 @@
   align-items: center;
 }
 
-.hero img{
+.hero img {
   margin-top: 150px;
 }
 
@@ -69,4 +70,107 @@
 
 .hero-resme:hover {
   border-color: #b415ff;
+}
+
+/* Media Queries */
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+  .hero img {
+    margin-top: 100px;
+  }
+
+  .hero h1 {
+    width: 80%;
+    font-size: 50px;
+  }
+
+  .hero p {
+    width: 70%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .hero-connect,
+  .hero-resme {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+
+  .hero-resme {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: 50px;
+  }
+
+  .hero h1 {
+    width: 90%;
+    font-size: 40px;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero-action {
+    gap: 10px;
+  }
+
+  .hero-connect,
+  .hero-resme {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .hero-resme {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .hero img {
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .hero p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-action {
+    gap: 8px;
+  }
+
+  .hero-connect,
+  .hero-resme {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .hero-resme {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

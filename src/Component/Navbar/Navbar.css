@@ -17,7 +17,7 @@
 }
 
 .nav-connect {
-  padding: 20px 40px;
+  padding: 16px 26px;
   border-radius: 50px;
   font-size: 22px;
   cursor: pointer;
@@ -29,7 +29,7 @@
   transform: scale(1.05);
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .Navbar {
     margin: 20px 50px;
   }
@@ -71,4 +71,4 @@
   .nav-menu.open {
     right: 0;
   }
-} */
+}

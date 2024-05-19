@@ -1,4 +1,4 @@
-.mywork{
+.mywork {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,39 +6,46 @@
     gap: 80px;
     /* margin: 80px 100px; */
 }
-.mywork-title{
+
+.mywork-title {
     position: relative;
 }
-.mywork-title h1{
+
+.mywork-title h1 {
     padding: 0px 30px;
     font-size: 80px;
-    font-weight:600 ;
+    font-weight: 600;
 }
-.mywork-title img{
+
+.mywork-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.mywork-contanir{
+
+.mywork-contanir {
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.mywork-contanir img{
+
+.mywork-contanir img {
     box-sizing: border-box;
     width: 419px;
     height: 280px;
-    transition:0.3s ;
+    transition: 0.3s;
     cursor: pointer;
 }
-.mywork-contanir img:hover{
+
+.mywork-contanir img:hover {
     transform: scale(1.10);
     border: 4px solid #ff00ff;
     border-radius: 10px;
     transition: 0.3s;
 }
-.mywork-showmore{
+
+.mywork-showmore {
     display: flex;
     gap: 15px;
     border-radius: 50px;
@@ -51,7 +58,64 @@
     cursor: pointer;
     align-items: center;
 }
-.mywork-showmore:hover{
-    gap:30px;
+
+.mywork-showmore:hover {
+    gap: 30px;
     transition: 0.6s;
+}
+
+/* Media Queries */
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+    .mywork-title h1 {
+        font-size: 60px;
+    }
+
+    .mywork-contanir {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mywork-contanir img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mywork-showmore {
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .mywork {
+        gap: 40px;
+    }
+
+    .mywork-title h1 {
+        font-size: 40px;
+    }
+
+    .mywork-contanir {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mywork-showmore {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    .mywork-title h1 {
+        font-size: 30px;
+    }
+
+    .mywork-showmore {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
