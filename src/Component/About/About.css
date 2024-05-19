@@ -35,9 +35,6 @@
   }
   
   .about-para {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     font-size: 24px;
     font-weight: 500;
   }
@@ -52,7 +49,7 @@
     display: flex;
     gap: 50px;
     align-items: center;
-    transition: 0.3s;
+    transition: transform 0.3s;
   }
   
   .about-skill p {
@@ -72,7 +69,6 @@
   
   .about-achievements {
     display: flex;
-    width: 100%;
     justify-content: space-around;
     margin-bottom: 20px;
   }
@@ -82,7 +78,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    transition: 0.5s;
+    transition: transform 0.5s;
   }
   
   .about-achievement h1 {
@@ -99,14 +95,9 @@
     font-weight: 500;
   }
   
-  .about-skill:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-  }
-  
+  .about-skill:hover,
   .about-achievement:hover {
-    transform: scale(1.12);
-    transition: 0.5s;
+    transform: scale(1.05);
   }
   
   /* Media Queries */
@@ -127,18 +118,10 @@
       gap: 40px;
     }
   
-    .about-para, .about-skills {
-      font-size: 20px;
-    }
-  
-    .about-skill p {
-      font-size: 20px;
-    }
-  
-    .about-achievement h1 {
-      font-size: 50px;
-    }
-  
+    .about-para,
+    .about-skills,
+    .about-skill p,
+    .about-achievement h1,
     .about-achievement p {
       font-size: 20px;
     }
@@ -155,24 +138,16 @@
       font-size: 50px;
     }
   
-    .about-para, .about-skills {
+    .about-para,
+    .about-skills,
+    .about-skill p,
+    .about-achievement h1,
+    .about-achievement p {
       font-size: 18px;
     }
   
     .about-skill {
       gap: 30px;
-    }
-  
-    .about-skill p {
-      font-size: 18px;
-    }
-  
-    .about-achievement h1 {
-      font-size: 40px;
-    }
-  
-    .about-achievement p {
-      font-size: 18px;
     }
   }
   
@@ -187,24 +162,16 @@
       font-size: 40px;
     }
   
-    .about-para, .about-skills {
+    .about-para,
+    .about-skills,
+    .about-skill p,
+    .about-achievement h1,
+    .about-achievement p {
       font-size: 16px;
     }
   
     .about-skill {
       gap: 20px;
-    }
-  
-    .about-skill p {
-      font-size: 16px;
-    }
-  
-    .about-achievement h1 {
-      font-size: 30px;
-    }
-  
-    .about-achievement p {
-      font-size: 16px;
     }
   }
   

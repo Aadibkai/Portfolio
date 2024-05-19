@@ -12,7 +12,6 @@
 }
 
 .services-title h1 {
-  padding: 0px 30px;
   font-size: 80px;
   font-weight: 600;
 }
@@ -24,23 +23,23 @@
   z-index: -1;
 }
 
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
 .services-format {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding: 60px;
+  padding: 40px;
   border-radius: 10px;
   border: 2px solid white;
-  transition: 0.4s;
+  transition: border-color 0.4s, background-color 0.4s, transform 0.4s;
   cursor: pointer;
-}
-
-.service-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 80px;
 }
 
 .services-format h3 {
@@ -61,35 +60,19 @@
   color: #fff;
   font-size: 24px;
   line-height: 40px;
-  max-width: 300px;
+  max-height: 90px; /* Adjust height as needed */
   overflow: hidden;
-  height: 90px; /* Adjust height as needed */
-  transition: height 0.4s;
+  transition: max-height 0.4s;
 }
 
 .services-format:hover p {
-  height: auto;
+  max-height: none;
 }
 
 .services-format:hover {
   border: 2px solid #ff00ff;
   background-image: linear-gradient(45deg, #3f0028, #582300);
   transform: scale(1.05);
-  transition: 0.4s;
-}
-
-.servives-readmore {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.services-format:hover {
-  border: 2px solid #ff00ff;
-  background-image: linear-gradient(45deg, #3f0028, #582300);
-  transform: scale(1.05);
-  transition: 0.4s;
 }
 
 /* Media Queries */
@@ -106,12 +89,12 @@
   }
 
   .service-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
   }
 
   .services-format {
-    padding: 40px;
+    padding: 30px;
   }
 
   .services-format h3 {
@@ -140,12 +123,12 @@
   }
 
   .service-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
   }
 
   .services-format {
-    padding: 30px;
+    padding: 20px;
   }
 
   .services-format h3 {
@@ -174,7 +157,7 @@
   }
 
   .services-format {
-    padding: 20px;
+    padding: 10px;
   }
 
   .services-format h3 {

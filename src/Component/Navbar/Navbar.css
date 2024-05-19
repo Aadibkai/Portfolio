@@ -3,8 +3,6 @@
   align-items: center;
   justify-content: space-between;
   margin: 20px 170px;
-  /* position: relative;
-  z-index: 1; */
 }
 
 .nav-menu {
@@ -22,20 +20,21 @@
   font-size: 22px;
   cursor: pointer;
   background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.36%);
-  transition: 0.5s;
+  transition: transform 0.5s ease;
 }
 
 .nav-connect:hover {
   transform: scale(1.05);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
   .Navbar {
     margin: 20px 50px;
   }
 
-  .nav-conect {
-    display: none;
+  .nav-connect {
+    display: none; /* Corrected class name */
   }
 
   .nav-mob-open {
@@ -43,15 +42,17 @@
     position: fixed;
     right: 30px;
     cursor: pointer;
+    z-index: 3; /* Added z-index */
   }
 
   .nav-mob-close {
     display: block;
-    position: relative;
+    position: fixed;
     top: 30px;
-    left: 290px;
+    right: 30px;
     width: 30px;
     cursor: pointer;
+    z-index: 3; /* Added z-index */
   }
 
   .nav-menu {
@@ -60,12 +61,12 @@
     align-items: center;
     gap: 30px;
     top: 0;
+    right: -350px;
     background-color: #1f0016;
     width: 350px;
     height: 100%;
     z-index: 2;
     transition: right 0.2s;
-    right: -350px;
   }
 
   .nav-menu.open {

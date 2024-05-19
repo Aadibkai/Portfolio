@@ -7,7 +7,6 @@
 
 .container {
   width: 100%;
-  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +72,6 @@
 }
 
 /* Media Queries */
-
-/* For tablets and below */
 @media (max-width: 1024px) {
   .hero img {
     margin-top: 100px;
@@ -109,7 +106,6 @@
   }
 }
 
-/* For mobile devices */
 @media (max-width: 768px) {
   .hero img {
     margin-top: 50px;
@@ -142,7 +138,6 @@
   }
 }
 
-/* For small mobile devices */
 @media (max-width: 480px) {
   .hero img {
     margin-top: 20px;
