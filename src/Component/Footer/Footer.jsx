@@ -103,7 +103,7 @@ const Footer = () => {
             }}
             href="https://www.linkedin.com/in/aadibkazi/"
           >
-            <img className="aa" src="./img/linkedin.png" alt="" />
+            <img  src="./img/linkedin.png" alt="" />
           </a>
           <a
             style={{
