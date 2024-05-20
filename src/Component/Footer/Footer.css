@@ -81,7 +81,7 @@
 }
 
 /* Media Query to Hide Footer in Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer-top{
     display: none;
   }

@@ -32,7 +32,7 @@
   margin: 0px 460px;
   width:30% ;
 }
-@media (max-width: 768px){
+@media (max-width: 1024px){
   .mywork_showmore{
     /* margin: 0px 76px; */
     width: 50%;
