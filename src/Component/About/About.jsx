@@ -3,17 +3,18 @@ import "./About.css";
 
 const About = () => {
   return (
-    <>
-    <div className="container">
     <div id="about">
       <div className="about">
         <div className="about-title">
           <h1>About Me</h1>
-          <img src="" alt="" />
         </div>
         <div className="about-section">
           <div className="about-left">
-            <img style={{height:"250px", borderRadius:"210px"}} src="./img/me.png" alt="Profile" />
+            <img
+              style={{ height: "250px", borderRadius: "210px" }}
+              src="./img/me.png"
+              alt="Profile"
+            />
           </div>
           <div className="about-right">
             <div className="about-para">
@@ -61,8 +62,6 @@ const About = () => {
         </div>
       </div>
     </div>
-    </div>
-    </>
   );
 };
 

@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
-
   const handleSubscribed = (e) => {
     e.preventDefault();
     if (email.trim() !== "" && !error) {
@@ -104,7 +103,7 @@ const Footer = () => {
             }}
             href="https://www.linkedin.com/in/aadibkazi/"
           >
-            <img src="./img/linkedin.png" alt="" />
+            <img className="aa" src="./img/linkedin.png" alt="" />
           </a>
           <a
             style={{

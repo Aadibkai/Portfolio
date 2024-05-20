@@ -82,14 +82,15 @@
 
 /* Media Query to Hide Footer in Mobile View */
 @media (max-width: 768px) {
-  .footer {
+  .footer-top{
     display: none;
   }
-
-  /* Display Only the Image */
-  .footer-bottom-left img {
-    display: block;
-    width: 100px; /* Adjust as needed */
-    margin: 20px; /* Adjust as needed */
+  .footer-bottom-right{
+    display: none;
   }
+  .footer-botom{
+    margin-bottom: 20px;
+  }
+ 
+ 
 }
