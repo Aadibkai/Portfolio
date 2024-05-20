@@ -58,86 +58,99 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact">
-      <div className="contact">
-        <div className="contact-title">
-          <h1>Get in touch</h1>
-          <img src="" alt="" />
-        </div>
-        <div style={{ display: "flex" }}>
-          <div className="contact-section">
-            <div className="contact-left">
-              <h1>Let's talk</h1>
-              <p>
-                I am currently available to take on new projects, so feel free
-                to send me a message about anything that you want me to work on.
-                You can contact me anytime.
-              </p>
-              <div className="contact-details">
-                <div className="contact-detail">
-                  <img src="./img/email.png" alt="Email" />
-                  <p>adibkazi1106@gmail.com</p>
-                </div>
-                <div className="contact-detail">
-                  <img
-                    style={{
-                      backgroundColor: "#a0a0a0",
-                      height: "20px",
-                      width: "20px",
-                      // color:"#a0a0a0"
-                    }}
-                    src="./img/phone-call.png"
-                    alt="Phone"
-                  />
-                  <p>8007633650</p>
-                </div>
-                <div className="contact-detail">
-                  <img
-                    style={{
-                      backgroundColor: "#a0a0a0",
-                      height: "20px",
-                      width: "20px",
-                    }}
-                    src="./img/location.png"
-                    alt="Location"
-                  />
-                  <p>Pune, Maharashtra</p>
-                </div>
-              </div>
+    <div id="contact" className="contact">
+      <div className="contact_title">
+        <h1>Get in touch</h1>
+      </div>
+      <div className="contact_container">
+        <div className="contact_left">
+          <h1>Let's talk</h1>
+          <p className="contact_left_para">
+            I am currently available to take on new projects, so feel free to
+            send me a message about anything that you want me to work on. You
+            can contact me anytime.
+          </p>
+          <div className="contact_details">
+            <div className="contact_detail">
+              <img src="./img/email.png" alt="Email" />
+              <p>adibkazi1106@gmail.com</p>
+            </div>
+            <div className="contact_detail">
+              <img
+                style={{
+                  backgroundColor: "#a0a0a0",
+                  height: "20px",
+                  width: "20px",
+                  // color:"#a0a0a0"
+                }}
+                src="./img/phone-call.png"
+                alt="Phone"
+              />
+              <p>8007633650</p>
+            </div>
+            <div className="contact_detail">
+              <img
+                style={{
+                  backgroundColor: "#a0a0a0",
+                  height: "20px",
+                  width: "20px",
+                }}
+                src="./img/location.png"
+                alt="Location"
+              />
+              <p>Pune, Maharashtra</p>
             </div>
           </div>
-          <form  className="contact-right">
-            <label htmlFor="name">Your Name</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              name="name"
-              required
-              value={name}
-              onChange={(e) => handleChange(e, "name")}
-            />
-            <label htmlFor="email">Your Email</label>
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              onChange={(e) => handleChange(e, "email")}
-              name="email"
-              value={email}
-              required
-            />
-            <label htmlFor="message">Write your message here</label>
-            <textarea
-              name="message"
-              rows="8"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-            <button type="button" onSubmit={onSubmit} onClick={handleSubscribed} className="contact-submit">
-              Submit Now
-            </button>
-            <ToastContainer />
-          </form>
         </div>
+        <form className="contact_right">
+          <div className="sub_contact_right">
+            <div className="contact_right_inp_container">
+              <label htmlFor="name">Your Name</label>
+              <input
+                className="contact_right_inp"
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                required
+                value={name}
+                onChange={(e) => handleChange(e, "name")}
+              />
+            </div>
+            <div className="contact_right_inp_container">
+              <label htmlFor="email">Your Email</label>
+              <input
+                className="contact_right_inp"
+                type="email"
+                placeholder="Enter Your Email"
+                onChange={(e) => handleChange(e, "email")}
+                name="email"
+                value={email}
+                required
+              />
+            </div>
+            <div className="contact_right_inp_container ">
+              <label htmlFor="message">Write your message here</label>
+              <textarea
+                className="contact_right_inp"
+                name="message"
+                rows="8"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+            <div className="contact_right_inp_container_btn">
+              <button
+                type="button"
+                onSubmit={onSubmit}
+                onClick={handleSubscribed}
+                className="contact_submit"
+              >
+                Submit Now
+              </button>
+            </div>
+            <ToastContainer />
+          </div>
+        </form>
       </div>
     </div>
   );
