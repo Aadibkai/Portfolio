@@ -34,22 +34,27 @@
 }
 @media (max-width: 1024px){
   .mywork_showmore{
-    /* margin: 0px 76px; */
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
+    gap: 10px;
   }
   .mywork_title{
     font-size: 20px;
+    padding-top: 20px;
   }
   .mywork_contanir{
     display: flex;
     flex-direction: column;
-    
+    width: 80%;
+
   }
   .mywork{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .mywork_contanir_img{
+    width: 80%;
   }
 }

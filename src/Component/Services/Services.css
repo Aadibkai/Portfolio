@@ -80,17 +80,22 @@
 /* For tablets and below */
 @media (max-width: 1024px) {
   .services {
-    margin: 60px 100px;
+    margin: 40px 18px;
     gap: 60px;
   }
 
   .services-title h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .service-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .services-format {
@@ -111,65 +116,3 @@
   }
 }
 
-/* For mobile devices */
-@media (max-width: 1024px) {
-  .services {
-    margin: 40px 50px;
-    gap: 40px;
-  }
-
-  .services-title h1 {
-    font-size: 50px;
-  }
-
-  .service-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  }
-
-  .services-format {
-    padding: 20px;
-  }
-
-  .services-format h3 {
-    font-size: 20px;
-  }
-
-  .services-format h2 {
-    font-size: 28px;
-  }
-
-  .services-format p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-/* For small mobile devices */
-@media (max-width: 1024px) {
-  .services {
-    margin: 20px 20px;
-    gap: 20px;
-  }
-
-  .services-title h1 {
-    font-size: 40px;
-  }
-
-  .services-format {
-    padding: 10px;
-  }
-
-  .services-format h3 {
-    font-size: 18px;
-  }
-
-  .services-format h2 {
-    font-size: 24px;
-  }
-
-  .services-format p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
