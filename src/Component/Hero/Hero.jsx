@@ -3,7 +3,7 @@ import "./Hero.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 const Hero = () => {
   return (
-    <div id="home" className="container">
+    <div id="ho" className="container">
       <div>
         <div className="hero">
           <img
@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="hero-action">
             <div className="hero-connect">
               <AnchorLink
-                href="#contact"
+                href="#co"
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Connect With Me

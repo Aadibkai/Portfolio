@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding: 40px;
+  padding: 16px;
   border-radius: 10px;
   border: 2px solid white;
   transition: border-color 0.4s, background-color 0.4s, transform 0.4s;
