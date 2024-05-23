@@ -14,17 +14,8 @@ const Services = () => {
           {Service_Data.map((service, index) => {
             return (
               <div key={index} className="services-format">
-                <h3>{service.s_no}</h3>
                 <h2>{service.s_name}</h2>
                 <p>{service.s_desc}</p>
-                <div className="servives-readmore">
-                  <p>Read More</p>
-                  <img
-                    style={{ display: "flex", width: "40px", height: "60px" }}
-                    src="./img/Arrow.png"
-                    alt=""
-                  />
-                </div>
               </div>
             );
           })}
