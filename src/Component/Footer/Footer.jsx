@@ -94,38 +94,26 @@ const Footer = () => {
           }}
           className="image"
         >
-          <a
-            style={{
-              display: "flex",
-              height: "34px",
-              width: "164px",
-              gap: "20px",
-            }}
-            href="https://www.linkedin.com/in/aadibkazi/"
-          >
-            <img  src="./img/linkedin.png" alt="" />
+          <a href="https://www.linkedin.com/in/aadibkazi/">
+            <img
+              style={{ height: "34px", objectFit: "contain" }}
+              src="./img/linkedin.png"
+              alt=""
+            />
           </a>
-          <a
-            style={{
-              display: "flex",
-              height: "34px",
-              width: "164px",
-              gap: "20px",
-            }}
-            href="https://www.instagram.com/aadib____/"
-          >
-            <img src="./img/instagram.png" alt="" />
+          <a href="https://www.instagram.com/aadib____/">
+            <img
+              style={{ height: "34px", objectFit: "contain" }}
+              src="./img/instagram.png"
+              alt=""
+            />
           </a>
-          <a
-            style={{
-              display: "flex",
-              height: "34px",
-              width: "164px",
-              gap: "20px",
-            }}
-            href="https://github.com/Aadibkai"
-          >
-            <img src="./img/github.png" alt="" />
+          <a href="https://github.com/Aadibkai">
+            <img
+              style={{ height: "34px", objectFit: "contain" }}
+              src="./img/github.png"
+              alt=""
+            />
           </a>
         </div>
         <div className="footer-bottom-right">
