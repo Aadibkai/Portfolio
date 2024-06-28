@@ -1,9 +1,9 @@
 import React from "react";
 import "./Hero.css";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-scroll";
 const Hero = () => {
   return (
-    <div id="home" className="container">
+    <div id='home' className="container">
       <div>
         <div className="hero">
           <img
@@ -20,12 +20,12 @@ const Hero = () => {
           </p>
           <div className="hero-action">
             <div className="hero-connect">
-              <AnchorLink
-                href="#co"
+              <Link to="conect"
+
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Connect With Me
-              </AnchorLink>
+              </Link>
             </div>
             <div className="hero-resme">
              <a   style={{ textDecoration: "none", color: "white" }} href="https://drive.google.com/file/d/1-3GKnuUg5gmxFIckcpvZBGf3lI2X_lk7/view?usp=sharing"> My resume </a> </div>

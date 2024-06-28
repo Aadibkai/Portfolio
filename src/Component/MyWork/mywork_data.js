@@ -13,9 +13,9 @@ const mywork_data = [
   },
   {
     id: 3,
-    title: "Hijab Store",
+    title: "Chat App",
     description: "Vestibulum ac velit sit amet lectus vestibulum malesuada. Ut facilisis felis ut nibh fermentum, eget molestie nisl fermentum. Cras convallis nisl vel ultricies aliquam.",
-    image: require("./immg/Hijab_store.png")
+    image: require("./immg/Screenshot 2024-06-28 130921.png")
   },
   {
     id: 4,

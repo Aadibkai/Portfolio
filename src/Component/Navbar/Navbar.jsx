@@ -1,60 +1,37 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-scroll";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
   return (
     <div className="Navbar">
-      <ul className="nav-menu" style={{ cursor: "pointer" }}>
+      <ul className="nav-menu">
         <li>
-          <Link 
-            to="home" 
-            smooth={true} 
-            duration={500} 
-            style={{ color: "white", fontSize: "28px", textDecoration: "none" }}
-          >
-            Home
-          </Link>
+          <AnchorLink 
+           className="anchor-link" href="#home">
+          
+            <p>Home</p>
+          </AnchorLink>
         </li>
         <li>
-          <Link 
-            to="about" 
-            smooth={true} 
-            duration={500} 
-            style={{ color: "white", fontSize: "28px", textDecoration: "none" }}
-          >
-            About Me
-          </Link>
+          <AnchorLink className="anchor-link" offset={50} href="#about">
+            <p>About Me</p>
+          </AnchorLink>
         </li>
         <li>
-          <Link 
-            to="services" 
-            smooth={true} 
-            duration={500} 
-            style={{ color: "white", fontSize: "28px", textDecoration: "none" }}
-          >
-            Services
-          </Link>
+          <AnchorLink className="anchor-link" offset={50} href="#services">
+            <p>Services</p>
+          </AnchorLink>
         </li>
         <li>
-          <Link 
-            to="portfolio" 
-            smooth={true} 
-            duration={500} 
-            style={{ color: "white", fontSize: "28px", textDecoration: "none" }}
-          >
-            Portfolio
-          </Link>
+          <AnchorLink className="anchor-link" offset={50} href="#portfolio">
+            <p>Portfolio</p>
+          </AnchorLink>
         </li>
         <li>
-          <Link 
-            to="contact" 
-            smooth={true} 
-            duration={500} 
-            style={{ color: "white", fontSize: "28px", textDecoration: "none" }}
-          >
-            Contact
-          </Link>
+          <AnchorLink className="anchor-link" offset={50} href="#contact">
+            <p>Contact</p>
+          </AnchorLink>
         </li>
       </ul>
     </div>

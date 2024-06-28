@@ -7,21 +7,21 @@
   margin: 80px 170px;
 }
 
-.services-title {
+/* .services-title {
   position: relative;
-}
+} */
 
 .services-title h1 {
   font-size: 80px;
   font-weight: 600;
 }
 
-.services-title img {
-  position: absolute;
+/* .services-title img {
+ 
   bottom: 0;
   right: 0;
   z-index: -1;
-}
+} */
 
 .service-container {
   display: grid;
